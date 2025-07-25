@@ -202,15 +202,15 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans  &kp F1       &kp F2         &kp F3         &kp F4          &kp F5          &kp F6        &kp F7          &hm TILDE GRAVE  &hm UNDER MINUS  &hm PIPE BSLH   &kp F11
-&trans  &hm EXCL N1  &hm AT N2      &hm HASH N3    &hm DLLR N4     &hm PRCNT N5    &hm CARET N6  &hm AMPS N7     &hm STAR N8      &hm LPAR N9      &hm RPAR N0     &kp F12
-&trans  &trans       &hm LBRC LBKT  &hm RBRC RBKT  &none           &none           &sl 1         &hm PLUS EQUAL  &hm LT COMMA     &hm GT DOT       &hm QMARK FSLH  &none
-                                    &trans         &kp LEFT_SHIFT  &trans          &trans        &trans          &trans
+&trans  &kp F1       &kp LBRC   &kp RBRC     &none           &none           &kp PRINTSCREEN  &none           &hm TILDE GRAVE  &hm UNDER MINUS  &hm PIPE BSLH   &none
+&trans  &hm EXCL N1  &hm AT N2  &hm HASH N3  &hm DLLR N4     &hm PRCNT N5    &hm CARET N6     &hm AMPS N7     &hm STAR N8      &hm LPAR N9      &hm RPAR N0     &none
+&trans  &none        &kp LBKT   &kp RBKT     &none           &none           &sl 1            &hm PLUS EQUAL  &hm LT COMMA     &hm GT DOT       &hm QMARK FSLH  &none
+                                &trans       &kp LEFT_SHIFT  &trans          &trans           &trans          &trans
             >;
         };
 
-        SYM {
-            display-name = "Symbols";
+        BASICNAV {
+            display-name = "basic nav layer";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -219,10 +219,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT          &kp HASH        &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RPAR  &trans
-&trans  &trans    &trans          &kp UP_ARROW    &trans           &kp GRAVE    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT              &kp BSLH  &trans
-&trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TILDE    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC              &kp PIPE  &trans
-                                  &kp LGUI        &trans           &kp SPACE    &kp RET    &trans     &trans
+&trans  &none          &kp K_VOLUME_DOWN  &kp K_VOLUME_UP   &kp K_MUTE      &kp C_BRIGHTNESS_INC    &none              &none          &none        &none            &none  &bootloader
+&trans  &kp RIGHT_GUI  &kp LEFT_ALT       &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp C_BRIGHTNESS_DEC    &kp LEFT           &kp DOWN       &kp UP       &kp RIGHT        &none  &none
+&sl 2   &none          &none              &none             &none           &none                   &hm LS(HOME) HOME  &kp PAGE_DOWN  &kp PAGE_UP  &hm LS(END) END  &none  &none
+                                          &studio_unlock    &trans          &trans                  &trans             &trans         &trans
             >;
         };
 
