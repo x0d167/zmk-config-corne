@@ -193,7 +193,7 @@
         };
 
         SYMNUM {
-            display-name = "sym+num";
+            display-name = "num";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -210,7 +210,7 @@
         };
 
         BASICNAV {
-            display-name = "basic nav layer";
+            display-name = "nav";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -227,7 +227,7 @@
         };
 
         HYPRNAV {
-            display-name = "hyprland navigation";
+            display-name = "hyprland";
             bindings = <
 &none    &none                  &kp RG(COMMA)          &kp RG(PERIOD)         &none                  &msc SCRL_UP             &kp RG(LC(R))     &none             &hm RG(LS(V)) RG(V)  &none              &none        &none
 &kp ESC  &hm RG(LS(N1)) RG(N1)  &hm RG(LS(N2)) RG(N2)  &hm RG(LS(N3)) RG(N3)  &hm RG(LS(N4)) RG(N4)  &hm RG(LS(N5)) RG(N5)    &kp RG(LEFT)      &kp RG(DOWN)      &kp RG(UP)           &kp RG(RIGHT)      &kp LA(ESC)  &none
@@ -237,9 +237,9 @@
         };
 
         SYSLAYER {
-            display-name = "System";
+            display-name = "Sys";
             bindings = <
-&none  &kp LC(LA(F1))  &kp LC(LA(F2))  &kp LC(LA(F3))  &kp LC(LA(F4))  &kp LC(LA(F5))    &kp LC(LA(F6))  &kp LC(LA(F7))  &none   &none   &none    &bootloader
+&none  &kp LC(LA(F1))  &kp LC(LA(F2))  &kp LC(LA(F3))  &kp LC(LA(F4))  &kp LC(LA(F5))    &kp LC(LA(F6))  &kp LC(LA(F7))  &none   &none   &none    &studio_unlock
 &none  &kp F1          &kp F2          &kp F3          &kp F4          &kp F5            &kp F6          &kp F7          &kp F8  &kp F9  &kp F10  &kp F11
 &sl 4  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_CLR      &bt BT_CLR_ALL    &none           &none           &none   &none   &none    &kp F12
                                        &none           &none           &none             &none           &none           &trans
